@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MSCS</groupId>
+  <artifactId>MSCS</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Metro Smart Card System</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <description>There is a single metro line covering 10 stations linearly.
+The stations name are A1, A2, A3, A4, A5, A6, A7, A8, A9, A10 as shown below. The travel can be in any direction.
+
+Travelers have smart cards that behave just like any regular debit card that has an initial balance when purchased. Travelers swipe-in when they enter a metro station and swipe-out when they exit.
+The card balance is automatically updated at swipe-out.
+
+Objective of the exercise is to create an automated system that has following functionalities:
+
+Card should have a minimum balance of Rs 5.5 at swipe-in. At swipe-out, system should calculate the fare based on below strategies set at the start of the day. The fare must be deducted from the card. Card should have the sufficient balance otherwise user should NOT be able to exit.
+
+Weekday – Rs. 7 * (Number of stations traveled)
+Weekend – Rs. 5.5 * (Number of station traveled if it's Saturday or Sunday)</description>
+</project>
